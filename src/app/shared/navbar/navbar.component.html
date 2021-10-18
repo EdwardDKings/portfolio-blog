@@ -1,0 +1,37 @@
+<div class="top-line"></div>
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <button
+    class="navbar-toggler hidden-sm-up"
+    type="button"
+    (click)="isNavbarCollapsed = !isNavbarCollapsed"
+    data-target="#navbarsDefault"
+    aria-controls="navbarsDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    [ngbCollapse]="isNavbarCollapsed"
+    class="collapse navbar-collapse"
+    id="navbarsDefault"
+  >
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about-Section"> About </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio-Section"> Portfolio </a>
+      </li>
+      <li class="nav-item active">
+        <a class="navbar-brand logo" href="#">Edward D Kings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#testimonials-Section"> Testimonials </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-Section"> Contact </a>
+      </li>
+    </ul>
+  </div>
+</nav>
