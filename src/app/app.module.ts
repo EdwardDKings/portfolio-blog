@@ -7,20 +7,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingPgComponent } from './pages/landing-pg/landing-pg.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ChangingTextComponent } from './shared/components/changing-text/changing-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPgComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ChangingTextComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
